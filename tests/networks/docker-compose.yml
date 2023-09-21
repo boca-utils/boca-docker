@@ -29,7 +29,7 @@ services:
 
     # web app
     boca-web:
-        image: ghcr.io/joaofazolo/boca-docker/boca-web:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-web:latest
         environment:
             # database configuration
             # privileged user password
@@ -42,7 +42,7 @@ services:
 
     # online judge
     boca-jail:
-        image: ghcr.io/joaofazolo/boca-docker/boca-jail:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-jail:latest
         privileged: true
         networks:
             - backend
