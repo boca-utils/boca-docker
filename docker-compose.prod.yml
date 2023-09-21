@@ -24,7 +24,7 @@ version: '3.8'
 services:
     # web app
     boca-web:
-        image: ghcr.io/joaofazolo/boca-docker/boca-web:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-web:latest
         depends_on:
             - boca-db
         deploy:
@@ -44,7 +44,7 @@ services:
 
     # online judge
     boca-jail:
-        image: ghcr.io/joaofazolo/boca-docker/boca-jail:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-jail:latest
         depends_on:
             - boca-db
         deploy:
