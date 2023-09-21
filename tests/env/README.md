@@ -2,7 +2,7 @@
 
 The _boca-docker_ application uses several environment variables which are easy to miss. The variables required are `POSTGRES_PASSWORD` (`boca-db` service) and `BOCA_DB_SUPER_PASSWORD` (`boca-web` service), the rest are optional.
 
-> **NOTE:** DO NOT set the optional `POSTGRES_DB` environment variable in the `boca-db` service. Find out the reasons for that [here](https://github.com/joaofazolo/boca-docker/issues/17).
+> **NOTE:** DO NOT set the optional `POSTGRES_DB` environment variable in the `boca-db` service. Find out the reasons for that [here](https://github.com/boca-utils/boca-docker/issues/17).
 >
 > **NOTE:** From release `1.1.0` some environment variables received a `BOCA_` prefix. These are: `BOCA_DB_HOST`, `BOCA_DB_SUPER_USER`, `BOCA_DB_SUPER_PASSWORD`, `BOCA_DB_USER`, `BOCA_DB_PASSWORD`, and `BOCA_DB_NAME`.
 
