@@ -34,7 +34,7 @@ services:
 
     # web app
     boca-app:
-        image: ghcr.io/joaofazolo/boca-docker/boca-web:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-web:latest
         environment:
             # example 1: continuation...
             <<: *db-common
@@ -49,7 +49,7 @@ services:
 
     # online judge
     boca-jail:
-        image: ghcr.io/joaofazolo/boca-docker/boca-jail:latest
+        image: ghcr.io/boca-utils/boca-docker/boca-jail:latest
         privileged: true
         environment:
             <<: *db-common
